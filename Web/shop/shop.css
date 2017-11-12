@@ -1,36 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather");
-@import url("https://fonts.googleapis.com/css?family=Noticia Text");
-@import url("https://fonts.googleapis.com/css?family=Source Sans Pro");
-@import url("https://fonts.googleapis.com/css?family=Gravitas One");
-@import url("https://fonts.googleapis.com/css?family=Merriweather");
-@import url("https://fonts.googleapis.com/css?family=Kaushan Script");
-@import url("https://fonts.googleapis.com/css?family=Droid Serif");
-@import url("https://fonts.googleapis.com/css?family=Droid Serif");
-@import url("https://fonts.googleapis.com/css?family=Kotta One");
-@import url("https://fonts.googleapis.com/css?family=Oswald");
-@import url("https://fonts.googleapis.com/css?family=Lobster Two");
-@import url("https://fonts.googleapis.com/css?family=Stencil Std");
-@import url("https://fonts.googleapis.com/css?family=Volkhov");
-@import url("https://fonts.googleapis.com/css?family=Macondo");
-@import url("https://fonts.googleapis.com/css?family=Kaushan Script");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Lovers Quarrel");
-@import url("https://fonts.googleapis.com/css?family=overs Quarrel");
-@import url("https://fonts.googleapis.com/css?family=La Belle Aurore");
 /*!
 * Bootstrap 4.0.0-beta (https://getbootstrap.com)
 * Copyright 2011-2017 The Bootstrap Authors
 * Copyright 2011-2017 Twitter, Inc.
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
-.nodec{
-  text-decoration:none !important;
-}
-.ac:hover, .ac:visited, .ac:link, .ac:active{
-   background-color: #333333 !important;
-}
-
 .alert {
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
@@ -1266,7 +1239,7 @@ pre {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #dddddd;
+  color: #292b2c;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -2185,7 +2158,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     text-decoration: none;
     background-color: #f8f9fa; }
   .list-group-item-action:active {
-    color: #dddddd;
+    color: #292b2c;
     background-color: #e9ecef; }
 
 .list-group-item {
@@ -2996,7 +2969,7 @@ button.list-group-item-dark {
 
 .popover-body {
   padding: 9px 14px;
-  color: #dddddd; }
+  color: #292b2c; }
 
 @media print {
   *,
@@ -3094,7 +3067,7 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #dddddd;
+  color: #292b2c;
   text-align: left;
   background-color: white; }
 
@@ -5606,38 +5579,9 @@ body > * {
     pointer-events: none;
     background: linear-gradient(to bottom right, #FF6600 20%, transparent 80%); }
 
+.nazov {
+  font-weight: 300;
+  font-size: 20pt; }
+
 .style {
-  border-right: 1px solid black; }
-
-.nav {
-  overflow: hidden; }
-
-.style2 {
-  font-family: 'Kaushan Script';
-  font-size: 62px;
-  color: dark; }
-
-.style3 {
-  font-family: 'Roboto';
-  font-weight: 300; }
-
-.style4 {
-  border-top: 1px solid;
-  border-color: #444444; }
-
-.style5 {
-  background-color: #333333; }
-
-.style6 {
-  height: 2px; }
-
-.style7 {
-  height: 350px;
-  margin-top: 5px; }
-
-.style8 {
-  height: 320px;
-  margin-top: 5px; }
-
-.style9 {
-  border-radius: 0.25rem; }
+  border-radius: 0.25 rem; }

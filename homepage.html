@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="layout.css" type="text/css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=La Belle Aurore"> </head>
-
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=La Belle Aurore"> 
+      </head>
 <body>
   <div class="text-center bg-dark opaque-overlay">
     <div class="container">
@@ -22,7 +22,7 @@
             <div class="col-md-3"><i class="d-block fa fa-diamond fa-5x text-primary"></i></div>
             <div class="col-md-6">
               <h6 class="">&nbsp;</h6>
-              <h2 class="text-primary style3">Diamon Gym</h2>
+              <h2 class="text-primary style3">Diamond Gym</h2>
             </div>
           </div>
         </div>
@@ -31,28 +31,28 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2 bg-dark">
+        <div id="menu" class="col-md-2 bg-dark">
           <ul class="nav nav-pills flex-column text-left py-3">
             <li class="nav-item p-1">
               <a href="#" class="active nav-link text-white" target=""><i class="fa fa-home fa-home"></i>&nbsp;Domov</a>
             </li>
-            <li class="nav-item bg-info m-1 style9">
+            <li class="ac nav-item bg-info m-1 style9">
               <a href="#" class="nav-link text-white">Novinky</a>
             </li>
-            <li class="nav-item bg-info m-1 style9">
+            <li class="ac nav-item bg-info m-1 style9">
               <a href="#" class="nav-link text-white">Naši tréneri</a>
             </li>
-            <li class="nav-item m-1 bg-info style9">
+            <li class="ac nav-item m-1 bg-info style9">
               <a href="#" class="nav-link text-white">Udalosti</a>
             </li>
-            <li class="nav-item bg-info m-1 style9">
+            <li class="ac nav-item bg-info m-1 style9">
               <a href="#" class="nav-link text-white">Služby</a>
             </li>
             <li class="nav-item p-1">
               <a href="#" class="nav-link active text-white"><i class="fa fa-shopping-cart text-white"></i>&nbsp;Obchod</a>
             </li>
             <li class="nav-item p-1">
-              <a href="#" class="active nav-link text-white"><i class="fa fa-handshake-o text-white"></i>&nbsp;Komunita</a>
+              <a href="../community/index.html" class="active nav-link text-white"><i class="fa fa-handshake-o text-white"></i>&nbsp;Komunita</a>
             </li>
           </ul>
         </div>
@@ -69,18 +69,11 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                   <div class="carousel-item">
-                    <img class="d-block img-thumbnail mx-auto" src="../../../../empty-gym.jpg" data-holder-rendered="true" width="840" height="300"> </div>
+                    <img class="d-block img-thumbnail mx-auto" src="./img/empty-gym.png" data-holder-rendered="true" > </div>
                   <div class="carousel-item active">
-                    <img class="d-block img-fluid img-thumbnail" src="../../../../gymslider_2/gymslider_2.png" data-holder-rendered="true" height="1000" width="1000"> </div>
+                    <img class="d-block img-fluid img-thumbnail" src="./img/gymslider_2.png" data-holder-rendered="true" > </div>
                   <div class="carousel-item">
-                    <img class="d-block img-fluid img-thumbnail" src="../../../../../Documents/car.jpg" data-holder-rendered="true"> </div>
-                  <div class="carousel-item">
-                    <img class="img-fluid" src="../../../../gymslider_2.jpg">
-                    <div class="carousel-caption">
-                      <h2>Title</h2>
-                      <p>Description</p>
-                    </div>
-                  </div>
+                    <img class="d-block img-fluid img-thumbnail" src="./img/Gym.png" data-holder-rendered="true"> </div>
                 </div>
               </div>
               <div class="carousel-item">
@@ -90,7 +83,25 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2 bg-dark"></div>
+        <div class="col-md-2 bg-dark">
+          <h1 class="text-center">Otváracie hodiny</h1>
+          <div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="lead text-center text-white"><b class="">Po-Pia</b></p>
+              </div>
+            </div>
+            <p class="lead">7:00-11:30
+              <br>
+            </p>
+            <p class="lead">12:30-22:00</p>
+          </div>
+          <div>
+            <p class="lead"><b class="text-white">So-Ne</b></p>
+            <p class="lead">8:00-11:30</p>
+            <p class="lead">12:30-21:00</p>
+          </div>
+        </div>
         <div class="col-md-10 my-3">
           <div class="row">
             <div class="col-md-3">
@@ -106,17 +117,23 @@
               </div>
             </div>
             <div class="col-md-3">
+              <a  href="../community/index.html" class="action text-white nodec">
               <div class="col-md-12 p-4"> <i class="d-block fa fa-3x fa-shopping-cart"></i>
                 <h2 class="my-3 text-white">Nakúp si!</h2>
                 <p>Priamy výber doplnkov priamo u nás v našom e-shope alebo priamo vo fitku!</p>
               </div>
+              </a>
             </div>
-            <div class="col-md-3">
-              <div class="col-md-12 p-4"> <i class="d-block fa fa-3x fa-commenting-o"></i>
-                <h2 class="my-3 text-white">Komunita</h2>
+            
+            <div  class="col-md-3">
+              <a  href="../community/index.html" class="action text-white nodec">
+              <div class="col-md-12 p-4"> <i class="ikonky d-block fa fa-3x fa-commenting-o"></i>
+                <h2 class="text my-3 text-white">Komunita</h2>
                 <p>Máme fórum, kde môžete zdieľať svoj pokrok, či sa spýtať na nejakú radu.</p>
               </div>
+              </a>
             </div>
+
           </div>
           <hr class="style6 bg-info"> </div>
       </div>
@@ -168,33 +185,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2 bg-dark"></div>
-        <div class="col-md-10 py-5">
-          <hr class="style6 bg-info">
-          <div class="row">
-            <div class="col-md-12">
-              <h1 class="py-4">Otváracie hodiny</h1>
-              <hr class="style6 bg-primary"> </div>
-          </div>
-          <div class="row py-2">
-            <div class="col-md-6">
-              <h1 class="text-light text-left">Pondelok - Piatok</h1>
-            </div>
-            <div class="col-md-6">
-              <h2 class="text-light text-right">07:00 - 11:30
-                <br>12:30 - 22:00</h2>
-            </div>
-          </div>
-          <div class="row py-2">
-            <div class="col-md-6">
-              <h1 class="text-light text-left">Sobota- Nedeľa&nbsp;</h1>
-            </div>
-            <div class="col-md-6">
-              <h2 class="text-light text-right">08:00 - 11:30
-                <br>12:30 - 21:00</h2>
-            </div>
-          </div>
-          <hr class="style6 bg-primary"> </div>
+        <div class="col-md-12 bg-dark"></div>
       </div>
     </div>
   </div>
