@@ -5481,6 +5481,14 @@ a.bg-dark:focus, a.bg-dark:hover {
 .font-italic {
   font-style: italic !important; }
 
+.hide{  
+  opacity:0; 
+}
+
+.showDiv{
+  opacity:1;
+}
+
 .text-white {
   color: #fff !important; }
 

@@ -24,6 +24,7 @@
           <li class="nav-item" style="float: right;">
             <a class="btn navbar-btn ml-2 text-white btn-primary" href="../shopping-cart/index.html"><i class="fa d-inline fa-lg fa-shopping-basket"> </i> Košík</a>
             <a class="btn navbar-btn ml-2 text-white btn-primary" href="#"><i class="fa d-inline fa-lg fa-user-circle-o"> </i> Účet</a>
+            <div id="div2" class="hide"> Produkt bol pridaný do košíka</div>
           </li>
         </ul>
       </div>
@@ -111,7 +112,7 @@
                     <h3 class="text-center text-white">SN: 100% srvátkový proteín, 920g </h3>
                     <img class="d-block img-fluid mx-auto w-50" src="src/578_1_2.jpg" height="150">
                     <h1 class="text-center text-white"><span style="font-size: 30px;" class="text-white">45€ s DPH</span></h1>
-                    <a href="#" class="btn btn-primary">Pridaj do košíka</a>
+                    <a href="#" class="btn btn-primary" onclick="ShowSecond()">Pridaj do košíka</a>
                   </div>
                 </div>
               </div>
@@ -123,7 +124,7 @@
                     <h3 class="text-center text-white">SN: 100% srvátkový proteín, 920g</h3>
                     <img class="d-block mx-auto img-fluid img-thumbnail w-50" src="src/61dbp7xmsdl._sl1024__1.jpg">
                     <h1 class="text-center text-white"><span style="font-size: 30px;" class="text-white">46€ s DPH</span></h1>
-                    <a href="#" class="btn btn-primary">Pridaj do košíka</a>
+                    <a href="#" class="btn btn-primary" onclick="ShowSecond()">Pridaj do košíka</a>
                   </div>
                 </div>
               </div>
@@ -137,7 +138,7 @@
                     <h3 class="text-center text-white">Gym Beam: BCAA 1500 + Lysin 300 tab&nbsp;</h3>
                     <img class="img-fluid d-block mx-auto w-50" src="src/bcaa_lysine_3.jpg">
                     <h1 class="text-center text-white"><span style="font-size: 30px;" class="text-white">18€ s DPH</span></h1>
-                    <a href="#" class="btn btn-primary">Pridaj do košíka</a>
+                    <a href="#" class="btn btn-primary" onclick="ShowSecond()">Pridaj do košíka</a>
                   </div>
                 </div>
               </div>
@@ -149,7 +150,7 @@
                     <h3 class="text-center text-white">Optimum Nutriton: BCAA 1000</h3>
                     <img class="img-fluid d-block mx-auto w-50" src="src/81yquynyo4l._sl1500__1.jpg">
                     <h1 class="text-center text-white"><span style="font-size: 30px;" class="text-white">18€ s DPH</span></h1>
-                    <a href="#" class="btn btn-primary">Pridaj do košíka</a>
+                    <a href="#" class="btn btn-primary" onclick="ShowSecond()">Pridaj do košíka</a>
                   </div>
                 </div>
               </div>
@@ -163,7 +164,7 @@
                     <h3 class="text-center text-white">SN: 100% srvátkový proteín, 920g </h3>
                     <img class="d-block img-fluid mx-auto w-50" src="src/578_1_2.jpg" height="150">
                     <h1 class="text-center text-white"><span style="font-size: 30px;" class="text-white">45€ s DPH</span></h1>
-                    <a href="#" class="btn btn-primary">Pridaj do košíka</a>
+                    <a href="#" class="btn btn-primary" onclick="ShowSecond()">Pridaj do košíka</a>
                   </div>
                 </div>
               </div>
@@ -175,7 +176,7 @@
                     <h3 class="text-center text-white">SN: 100% srvátkový proteín, 920g</h3>
                     <img class="d-block mx-auto img-fluid img-thumbnail w-50" src="src/61dbp7xmsdl._sl1024__1.jpg">
                     <h1 class="text-center text-white"><span style="font-size: 30px;" class="text-white">46€ s DPH</span></h1>
-                    <a href="#" class="btn btn-primary">Pridaj do košíka</a>
+                    <a href="#" class="btn btn-primary" onclick="ShowSecond()">Pridaj do košíka</a>
                   </div>
                 </div>
               </div>
@@ -210,7 +211,7 @@
                 <h2 class="text-center">ON: 100% srvátkový proteín, 908g</h2>
                 <img class="d-block mx-auto img-fluid w-50" src="src/4d065c08640b217fff74515b355b0d05_2_1.jpg">
                 <h1 class="text-center"><span style="font-size: 30px;" class="text-dark">38€ s DPH</span></h1>
-                <a href="#" class="btn btn-primary">Pridaj do košíka</a>
+                <a href="#" class="btn btn-primary" onclick="ShowSecond()">Pridaj do košíka</a>
               </div>
             </div>
             <div class="card my-5">
@@ -218,7 +219,7 @@
                 <h2 class="text-center">GymBeam: Kreatin TABS 1500 mg, 200tbl&nbsp;</h2>
                 <img class="img-fluid d-block mx-auto w-50" src="src/creatintabs_1.jpg">
                 <h1 class="text-center"><span style="font-size: 30px;" class="text-dark">14€ s DPH</span></h1>
-                <a href="#" class="btn btn-primary">Pridaj do košíka</a>
+                <a href="#" class="btn btn-primary" onclick="ShowSecond()">Pridaj do košíka</a>
               </div>
             </div>
           </div>
@@ -233,6 +234,14 @@
 function showDiv(toggle){
 document.getElementById(toggle).style.display = 'block';
 }
+function ShowSecond()
+ {
+     var div2 = document.getElementById("div2");
+     div2.className="show bg-white text-primary";
+     setTimeout(function() {
+        div2.className="hide";
+     }, 3000);
+ }
 </script>
 </body>
 
