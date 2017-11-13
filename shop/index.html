@@ -23,8 +23,8 @@
           <!--  style="margin-right: 0!important;" -->
           <li class="nav-item" style="float: right;">
             <a class="btn navbar-btn ml-2 text-white btn-primary" href="../shopping-cart/index.html"><i class="fa d-inline fa-lg fa-shopping-basket"> </i> Košík</a>
-            <a class="btn navbar-btn ml-2 text-white btn-primary" href="../profile/index.html"><i class="fa d-inline fa-lg fa-user-circle-o"> </i> Účet</a>
-            <div id="div2" class="hide"> Produkt bol pridaný do košíka</div>
+            <a class="btn navbar-btn ml-2 text-white btn-primary" href="../profile/index.html"><i class="fa d-inline fa-lg fa-user-circle-o"> </i> Profil</a>
+            <div id="div2" class="hide" style="position: fixed; bottom: 50px; right: 50px; padding: 50px;"> Produkt bol pridaný do <a href="../shopping-cart/">košíka</a>.</div>
           </li>
         </ul>
       </div>
@@ -104,7 +104,7 @@
           </div>
           <div id="toggle" class="text-center" style="display:none">Výsledky vyhľadávania: </div>
           <div id="toggle2" class="text-center" style="display:none">Výsledky Filtrovania: </div>
-          <div class="row">
+          <div class="row firstrow">
             <div class="col-md-6">
               <div class="p-3 align-self-center col-md-12">
                 <div class="card">
@@ -230,18 +230,29 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="js.cookie.js"></script>
   <script type="text/javascript">
 function showDiv(toggle){
-document.getElementById(toggle).style.display = 'block';
+  document.getElementById(toggle).style.display = 'block';
+  $(".firstrow").hide();
 }
+
 function ShowSecond()
- {
-     var div2 = document.getElementById("div2");
-     div2.className="show bg-white text-primary";
-     setTimeout(function() {
-        div2.className="hide";
-     }, 3000);
- }
+{
+    var itemsCount = Cookies.get('cartCount');
+    if (itemsCount == null || isNaN(itemsCount) || parseInt(itemsCount) == 0){
+      Cookies.set('cartCount', 1);
+    }else{
+      var count = parseInt(itemsCount); 
+      Cookies.set('cartCount', ++count);
+    }
+
+    var div2 = document.getElementById("div2");
+    div2.className="show bg-white text-primary";
+    setTimeout(function() {
+      div2.className="hide";
+    }, 3000);
+}
 </script>
 </body>
 

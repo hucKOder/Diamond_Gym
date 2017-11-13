@@ -26,7 +26,7 @@
         </div>
         <div class="col-md-1 "></div>
         <div class="col-md-2 ar">
-          <a class="btn navbar-btn ml-2 text-white btn-primary py-2 my-5" href="../profile/index.html"><i class="fa d-inline fa-lg fa-user-circle-o"> </i> Účet</a>
+          <a class="btn navbar-btn ml-2 text-white btn-primary py-2 my-5" href="../profile/index.html"><i class="fa d-inline fa-lg fa-user-circle-o"> </i> Profil</a>
         </div>
       </div>
     </div>
@@ -88,7 +88,7 @@
           </ul>
         </div>
         <div class="p-4 col-md-10" id="cart-items" data-item-count="0">
-          <h2 class="my-3" style="padding-bottom: 12px; margin-bottom: 0!important; border-bottom: 1px solid white;"><i class="fa fa-shopping-cart"></i> Nákupný košík <a href="javascript:" id="cart-add-item">+</a></h2>
+          <h2 class="my-3" style="padding-bottom: 12px; margin-bottom: 0!important; border-bottom: 1px solid white;"><i class="fa fa-shopping-cart"></i> Nákupný košík</h2>
 
           <h4 style="padding-top: 12px; display: none;" id="cart-empty">Nákupný košík prázdny. <a href="../shop/index.html">Späť do obchodu</a></h4>
           
@@ -341,13 +341,6 @@
         }
 
       });
-
-      $("#cart-add-item").click(function(){
-        var count = Cookies.get('cartCount');
-        Cookies.set('cartCount', ++count);
-        location.href = location.href;
-      });
-
     });
     
   </script>
