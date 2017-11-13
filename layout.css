@@ -24,13 +24,13 @@
 * Copyright 2011-2017 Twitter, Inc.
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
+
 .nodec{
   text-decoration:none !important;
 }
 .ac:hover, .ac:visited, .ac:link, .ac:active{
    background-color: #333333 !important;
 }
-
 .alert {
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
@@ -5619,7 +5619,7 @@ body > * {
 
 .style3 {
   font-family: 'Roboto';
-  font-weight: 300; }
+  font-weight: 250; }
 
 .style4 {
   border-top: 1px solid;
