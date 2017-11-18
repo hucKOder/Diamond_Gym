@@ -40,6 +40,19 @@
 .alert-heading {
   color: inherit; }
 
+.hide{  
+   opacity:0; 
+ }
+ 
+ .nazov {
+   font-weight: 300;
+   font-size: 20pt; }
+ 
+ 
+ .showDiv{
+   opacity:1;
+ }
+
 .alert-link {
   font-weight: bold; }
 
