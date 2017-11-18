@@ -26,8 +26,9 @@
             <h1 class="style2 py-4 text-light text-center" >...for better life</h1>
           </ul>
         </div>
-        <div class="col-md-1 "></div>
-        <div class="col-md-2 ar"></div>
+        <div class="col-md-3 ar">
+           <a class="btn navbar-btn ml-2 text-white btn-primary py-2 my-5" href="../profile/index.html"><i class="fa d-inline fa-lg fa-user-circle-o"> </i> Silny-chlapec123</a>
+        </div>
       </div>
     </div>
   </div>
@@ -102,7 +103,7 @@
                   </h4>
                   <div class="blockquote">
                     <p class="mb-0">Výška</p>
-                    <div class="blockquote-footer"><b>195 cm</b></div>
+                    <div class="blockquote-footer">195 cm</div>
                   </div>
                   <div class="blockquote">
                     <p class="mb-0">Hmotnosť</p>
@@ -130,7 +131,7 @@
                   <h3 class="text-center"><i class="fa fa-fw fa-flag"></i>
                     <u>&nbsp;Ciele</u>
                   </h3>
-                  <p class="lead"><b>Schudnúť 20kg &nbsp;</b></p>
+                  <p class="lead">Schudnúť 20kg &nbsp;</p>
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                   </div>
@@ -162,7 +163,7 @@
                       </h5>
                     </div>
                     <div class="col-md-6 text-center">
-                      <p class="lead"><b>5-krát</b></p>
+                      <p class="lead">5-krát</p>
                     </div>
                   </div>
                   <div class="row">
@@ -212,7 +213,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title"><i class="fa fa-fw fa-flag"></i>Nový cieľ</h5>
+          <h5 class="modal-title"><b><i class="fa fa-fw fa-flag"></i>Nový cieľ</b></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
         </div>
         <div class="modal-body">
@@ -230,8 +231,30 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" onclick="window.location.href='../profile/index.html'">Pridať cieľ</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#myModal2"">Pridať cieľ</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><b><i class="fa fa-fw fa-flag"></i>Nový cieľ</b></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+              <form class="" method="post" action="https://formspree.io/">
+                <div class="form-group"> <label><b>Cieľ bol úspešne pridaný!</b></label></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="window.location.href='../profile/index.html'">Naspäť na profil</button>
         </div>
       </div>
     </div>
