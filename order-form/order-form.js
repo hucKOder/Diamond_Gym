@@ -105,12 +105,13 @@ $("#tos, #tos1, #tos2 ,#tos3, #tos4").click(function()
         if (!ispsc(psc) || !iscity(mesto) || !isadresa(adresa))
              $(".error5").text("Nesprávne vyplnené dodacie údaje!");
         var click = $("#tos").is(":checked");
-        if (click == false)
-            $(".error6").text("Nepotvrdené podmienky!");
+        
+        // if (click == false)
+        //     $(".error6").text("Nepotvrdené podmienky!");
 
 
-        if (isString(meno) && meno && priezvisko && isString(priezvisko) && validateEmail(email) &&  phonenumber(cislo) && ispsc(psc) && iscity(mesto) && isadresa(adresa) && click == true)
-            window.location.href = './completed_order.html';
+        if (isString(meno) && meno && priezvisko && isString(priezvisko) && validateEmail(email) &&  phonenumber(cislo) && ispsc(psc) && iscity(mesto) && isadresa(adresa))// && click == true)
+            window.location.href = '../checkout/';
     });
 
     $("#psc").blur(function()
