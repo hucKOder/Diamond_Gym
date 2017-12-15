@@ -25,9 +25,7 @@
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
 
-.hide{  
-   opacity:0; 
- }
+
  
 .nodec{
   text-decoration:none !important;
@@ -44,7 +42,10 @@
 
 .alert-heading {
   color: inherit; }
-
+  
+.hide{  
+   opacity:0; 
+ }
 .alert-link {
   font-weight: bold; }
 
