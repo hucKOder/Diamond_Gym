@@ -78,7 +78,7 @@
         </div>
         <div class="col-md-7">
           <form class="form-inline" method="post" action="">
-            <input type="text" class="form-control" placeholder="Vyber si zo stoviek produktov..." style="width: 700px; font-size: 30px;" name="search">
+            <input type="text" class="form-control" placeholder="Vyber si zo stoviek produktov..." style="width: 700px; font-size: 30px;" name="search" id="vyhladaj"><label class="hide" for="vyhladaj">Vyhladavanie produktov</label>
             <input type="button" name="search" value= "Vyhľadať" class="btn btn-primary"  onclick="showDiv('toggle')" style="width: 700px; font-size: 20px;"></input>
           </form>
           <div class="btn-group btn-group-lg">
@@ -87,21 +87,21 @@
               <li class="bg-info text-white">
                 <p class="bg-info text-primary"> Značky: </p>
                 <input type="checkbox" value="on" id= "BN"><label for="BN">&nbsp;Best Nutrition</label>
-                <input type="checkbox" value="on"><label>&nbsp;Optimum Nutrition</label>
-                <input type="checkbox" value="on"><label>&nbsp;Gym Beam</label>
-                <input type="checkbox" value="on"><label>&nbsp;Scitec Nutrition</label> </li>
+                <input type="checkbox" value="on" id="ON"><label for= "ON">&nbsp;Optimum Nutrition</label>
+                <input type="checkbox" value="on" id= "GB"><label for="GB">&nbsp;Gym Beam</label>
+                <input type="checkbox" value="on" id="SN"><label for= "SN">&nbsp;Scitec Nutrition</label> </li>
               <li class="bg-info text-white">
                 <p class="bg-info text-primary"> Percentá: </p>
-                <input type="checkbox" value="on"><label>&nbsp;60%</label>
-                <input type="checkbox" value="on"><label>&nbsp;70%</label>
-                <input type="checkbox" value="on"><label>&nbsp;80%</label>
-                <input type="checkbox" value="on"><label>&nbsp;90%</label>
-                <input type="checkbox" value="on"><label>&nbsp;100%</label> </li>
+                <input type="checkbox" value="on" id="60"><label for="60">&nbsp;60%</label>
+                <input type="checkbox" value="on" id="70"><label for="70">&nbsp;70%</label>
+                <input type="checkbox" value="on" id="80"><label for="80">&nbsp;80%</label>
+                <input type="checkbox" value="on" id="90"><label for="90">&nbsp;90%</label>
+                <input type="checkbox" value="on" id="100"><label for="100">&nbsp;100%</label> </li>
               <li class="bg-info text-white">
                 <p class="bg-info text-primary"> Zoradiť podľa: </p>
-                <input type="radio" id="1-option" name="selector" value="on"><label>&nbsp;Ceny</label>
-                <input type="radio" id="2-option" name="selector" value="on"><label>&nbsp;Hodnotení</label>
-                <input type="radio" id="3-option" name="selector" value="on"><label>&nbsp;Popularity</label> </li>
+                <input type="radio" id="1-option" name="selector" value="on"><label for="1-option">&nbsp;Ceny</label>
+                <input type="radio" id="2-option" name="selector" value="on"><label for="2-option">&nbsp;Hodnotení</label>
+                <input type="radio" id="3-option" name="selector" value="on"><label for="3-option">&nbsp;Popularity</label> </li>
               <li>
                 <input type="button" name="filtruj" value= "Filtruj" class="btn btn-primary"  onclick="showDiv('toggle2')"> </input>
               </li>
