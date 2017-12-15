@@ -17,12 +17,11 @@
             <a class="nav-link text-primary" href="./index.html" style="margin-top: 1rem !important; font-size: 32pt; display: inline-block;">Diamond Gym</a>
           </div>
         </div>
-        <div class="col-md-12">
+        <!-- <div class="col-md-12">
           <ul class="navbar-nav">
-            <!--  style="margin-right: 0!important;" -->
             <h1 class="style2 py-4 text-light text-center" style="padding-top: 0!important;">...for better life</h1>
           </ul>
-        </div>
+        </div> -->
         <div class="col-md-12"></div>
         <!-- <div class="col-md-1 hidden-xs"> 
           <a class="btn navbar-btn ml-2 text-white btn-primary py-2 my-5" href="../shopping-cart/index.html"><i class="fa d-inline fa-lg fa-shopping-basket"> </i> Košík</a>
@@ -44,15 +43,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 bg-dark">
-          <ul class="nav nav-pills flex-column text-left">
-            <li class="nav-item border border-dark p-1" style="width: 134px;">
-              <a href="../shopping-cart/index.html" class="active nav-link"><i class="fa fa-shopping-basket"></i>&nbsp;Košík</a>
+          <ul class="nav nav-pills text-left">
+            <li class="ac nav-item bg-info m-1 style9" style="width: 45px;">
+              <a href="javascript:" id="nav-toggle" class="nav-link text-white" target="" style="display: inline-block;"><i class="fa fa-bars"></i></a>
             </li>
-            <li class="nav-item border border-dark p-1" style="width: 134px;">
-              <a href="../profile/index.html" class="active nav-link"><i class="fa fa-user-circle-o"></i>&nbsp;Profil</a>
+            <li class="ac nav-item bg-info m-1 style9" style="width: 45px;">
+              <a href="javascript:" id="search-toggle" class="nav-link text-white" target="" style="display: inline-block;"><i class="fa fa-search"></i></a>
             </li>
-            <li class="ac nav-item bg-info m-1 style9" style="width: 125px;">
-              <a href="javascript:" id="nav-toggle" class="nav-link text-white" target="" style="display: inline-block;"><i class="fa fa-bars"></i>&nbsp;Navigácia</a>
+            <li class="ac nav-item bg-info m-1 style9" style="width: 45px;">
+              <a href="../profile/index.html" class="nav-link text-white"><i class="fa fa-user-circle-o"></i></a>
+            </li>            
+            <li class="ac nav-item bg-info m-1 style9" style="width: 45px;">
+              <a href="../shopping-cart/index.html" class="nav-link text-white"><i class="fa fa-shopping-basket"></i></a>
             </li>
           </ul>
         </div>
@@ -96,7 +98,7 @@
         </div>
         <div class="col-md-7" style="padding-top: 22px;"></div>
         <div class="col-md-7">
-          <form class="form-inline" method="post" action="">
+          <form id="search-bar" class="form-inline" method="post" action="" style="display: none;">
             <input type="text" class="form-control" placeholder="Vyber si zo stoviek produktov..." style="width: 700px; font-size: 30px;" name="search">
             <input type="button" name="search" value= "Vyhľadať" class="btn btn-primary"  onclick="showDiv('toggle')" style="width: 700px; font-size: 20px;"></input>
           </form>
@@ -279,6 +281,9 @@
       $(document).ready(function() {
         $("#nav-toggle").click(function() {
           $("#menu").slideToggle("slow");
+        });
+        $("#search-toggle").click(function() {
+          $("#search-bar").slideToggle("slow");
         });
       });
 
