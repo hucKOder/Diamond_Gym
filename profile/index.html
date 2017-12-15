@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xml:lang="sk" lang="sk">
 
 <head>
+  <title>Profil</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -38,7 +39,7 @@
         <div class="col-md-12 p-2">
           <form class="form-inline m-0">
             <div class="col-md-10" style="text-align: left;">
-              <input class="form-control mr-2" type="text" placeholder="Hľadaný výraz" style="width: 100%;"> </div>
+              <input class="form-control mr-2" type="text" placeholder="Hľadaný výraz" style="width: 100%;" id="vyhladaj"> <label for="vyhladaj" style="opacity: 0;">vyhladavanie v komunitnej sekcii</label></div> 
             <div class="col-md-2">
               <button class="btn btn-primary" type="submit" style="width: 100%;"><i class="fa fa-search"></i> Hľadať</button>
             </div>
@@ -85,7 +86,7 @@
               <div class="row my-4">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
-                  <img src="img/man.png" style="width: 100%;" class=""> </div>
+                  <img src="img/man.png" style="width: 100%;" class="" alt="Profilovka"> </div>
                 <div class="col-md-4"></div>
               </div>
               <div class="row my-4">
@@ -180,7 +181,7 @@
           <h2 class="my-3" style="padding-bottom: 12px; border-bottom: 1px solid white;"><i class="fa fa-users"></i> Práve online</h2>
           <div class="row">
             <div class="col-md-5">
-              <img src="img/man.png" style="width: 100%; "> </div>
+              <img src="img/man.png" style="width: 100%; " alt="Profilova fotka uzivatela 1"> </div>
             <div class="col-md-7">
               <a href="#">
                 <h4 style="color: white;">Jožo</h4>
@@ -189,7 +190,7 @@
           </div>
           <div class="row" style="padding-top: 12px;">
             <div class="col-md-5">
-              <img src="img/man2.png" style="width: 100%; "> </div>
+              <img src="img/man2.png" style="width: 100%; " alt="Profilova fotka uzivatela 2"> </div>
             <div class="col-md-7">
               <a href="#">
                 <h4 style="color: white;">Peter</h4>
@@ -198,7 +199,7 @@
           </div>
           <div class="row" style="padding-top: 12px;">
             <div class="col-md-5">
-              <img src="img/man3.png" style="width: 100%;"> </div>
+              <img src="img/man3.png" style="width: 100%;" alt="Profilova fotka uzivatela 3"> </div>
             <div class="col-md-7">
               <a href="#">
                 <h4 style="color: white;">Adrián</h4>
@@ -268,11 +269,11 @@
             <br>Ilkovičova 200, 754 01 Bratislava 4</p>
         </div>
         <div class="col-md-4 my-3">
-          <img class="d-block img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;markers=New+York+City&amp;center=New+York+City&amp;zoom=17&amp;size=640x400&amp;sensor=false"> </div>
+          <img class="d-block img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;markers=New+York+City&amp;center=New+York+City&amp;zoom=17&amp;size=640x400&amp;sensor=false" alt="mapa"> </div>
         <div class="col-md-4  text-center align-self-center">
-          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-fw fa-facebook fa-3x text-white mx-3"></i></a>
-          <a href="https://twitter.com/" target="_blank"><i class="fa fa-fw fa-twitter fa-3x text-white mx-3"></i></a>
-          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-fw fa-instagram fa-3x text-white mx-3"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><span style="opacity:0;">fb</span><i class="fa fa-fw fa-facebook fa-3x text-white mx-3"></i></a>
+          <a href="https://twitter.com/" target="_blank"><span style="opacity:0;">twitter</span><i class="fa fa-fw fa-twitter fa-3x text-white mx-3"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><span style="opacity:0;">IG</span><i class="fa fa-fw fa-instagram fa-3x text-white mx-3"></i></a>
         </div>
       </div>
     </div>
