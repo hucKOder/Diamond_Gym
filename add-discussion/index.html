@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xml:lang="sk" lang="sk">
 
 <head>
+  <title>Pridanie príspevku</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -43,7 +44,7 @@
         <div class="col-md-12 p-2">
           <form class="form-inline m-0">
             <div class="col-md-10" style="text-align: left;">
-              <input class="form-control mr-2" type="text" placeholder="Hľadaný výraz" style="width: 100%;"> </div>
+              <input class="form-control mr-2" type="text" placeholder="Hľadaný výraz" style="width: 100%;" id="vyhladaj"> <label for="vyhladaj" class="hide">Vyhladaj</label></div>
             <div class="col-md-2">
               <button class="btn btn-primary" type="submit" style="width: 100%;"><i class="fa fa-search"></i> Hľadať</button>
             </div>
@@ -91,7 +92,7 @@
             <div class="col-md-8" style="text-align: right; font-style: italic;">
               <form class="" method="post" action="https://formspree.io/">
                 <div class="form-group">
-                  <input type="email" id="nazov" class="form-control" placeholder="Sem zadaj názov príspevku"> </div>
+                  <input type="email" id="nazov" class="form-control" placeholder="Sem zadaj názov príspevku"> <label for="nazov" class="hide">Názov príspevku</label></div>
               </form>
             </div>
             <div class="errorTxt1"  style="font-style: italic;"></div>
@@ -124,7 +125,7 @@
             <div class="col-md-12 py-3">
               <form class="" method="post" action="https://formspree.io/">
                 <div class="form-group">
-                  <input type="text" name="-" class="form-control" placeholder="Kľúčové slová napríklad #stravovanie #zdravie #dobry_obed ..."> </div>
+                  <input type="text" name="-" class="form-control" placeholder="Kľúčové slová napríklad #stravovanie #zdravie #dobry_obed ..." id= "keyword"> <label for="keyword" class="hide">Kľúčové slová</label></div>
               </form>
             </div>
           </div>
@@ -137,7 +138,7 @@
                     <h5>E-mail:</h5>
                   </div>
                   <div class="col-md-10">
-                    <input id="email" class="error form-control mr-2" type="email" data-error=".errorTxt2" placeholder="Sem zadajte vašu e-mailovú adresu .." style="width: 100%;"> 
+                    <input id="email" class="error form-control mr-2" type="email" data-error=".errorTxt2" placeholder="Sem zadajte vašu e-mailovú adresu .." style="width: 100%;"> <label for="email" class="hide">Email</label>
                   </div>
                   <div class="errorTxt2" style="font-style: italic;"></div>
                 </div>
@@ -165,7 +166,7 @@
           <h2 class="my-3" style="padding-bottom: 12px; border-bottom: 1px solid white;"><i class="fa fa-users"></i> Práve online</h2>
           <div class="row">
             <div class="col-md-5">
-              <img src="img/man.png" style="width: 100%; "> </div>
+              <img src="img/man.png" style="width: 100%; " alt="Profilova fotka uzivatela 1"> </div>
             <div class="col-md-7">
               <a href="#">
                 <h4 style="color: white;">Jožo</h4>
@@ -174,7 +175,7 @@
           </div>
           <div class="row" style="padding-top: 12px;">
             <div class="col-md-5">
-              <img src="img/man2.png" style="width: 100%; "> </div>
+              <img src="img/man2.png" style="width: 100%; " alt="Profilova fotka uzivatela 2"> </div>
             <div class="col-md-7">
               <a href="#">
                 <h4 style="color: white;">Peter</h4>
@@ -183,7 +184,7 @@
           </div>
           <div class="row" style="padding-top: 12px;">
             <div class="col-md-5">
-              <img src="img/man3.png" style="width: 100%;"> </div>
+              <img src="img/man3.png" style="width: 100%;" alt="Profilova fotka uzivatela 3"> </div>
             <div class="col-md-7">
               <a href="#">
                 <h4 style="color: white;">Adrián</h4>
@@ -216,7 +217,7 @@
             <br>Ilkovičova 200, 754 01 Bratislava 4</p>
         </div>
         <div class="col-md-4 my-3">
-          <img class="d-block img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;markers=New+York+City&amp;center=New+York+City&amp;zoom=17&amp;size=640x400&amp;sensor=false"> </div>
+          <img class="d-block img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;markers=New+York+City&amp;center=New+York+City&amp;zoom=17&amp;size=640x400&amp;sensor=false" alt= "mapa"> </div>
         <div class="col-md-4  text-center align-self-center">
           <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-fw fa-facebook fa-3x text-white mx-3"></i></a>
           <a href="https://twitter.com/" target="_blank"><i class="fa fa-fw fa-twitter fa-3x text-white mx-3"></i></a>
