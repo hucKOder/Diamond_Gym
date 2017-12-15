@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xml:lang="sk" lang="sk">
 
 <head>
+  <title>Komunitna sekcia</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -66,7 +67,7 @@
                 <div class="col-md-12 p-2" style="padding-left: 0!important; padding-right: 0!important;     padding-top: 0.3rem!important;">
                   <form class="form-inline m-0">
                     <div class="col-md-9" style="text-align: left;">
-                      <input class="form-control mr-2" type="text" placeholder="Hľadaný výraz" style="width: 100%;"> </div>
+                      <input class="form-control mr-2" type="text" placeholder="Hľadaný výraz" style="width: 100%;" id="vyhladaj"> <label for="vyhladaj" style="opacity: 0;">vyhladavanie v komunitnej sekcii</label></div>
                     <div class="col-md-3">
                       <button class="btn btn-primary" type="submit" style="width: 100%;"><i class="fa fa-search"></i> Hľadať</button>
                     </div>
@@ -123,7 +124,7 @@
             <div class="col-md-6 col-sm-6">
               <div class="row">
                 <div class="col-md-7">
-                  <img src="img/food.jpg" style="max-width: 100%; border: 1px solid white;"> </div>
+                  <img src="img/food.jpg" style="max-width: 100%; border: 1px solid white;" alt="Stravovanie"> </div>
                 <div class="col-md-5">
                   <a href="../community/">
                     <h5 style="display: inline-block; color: white;">Stravovanie</h5>
@@ -138,7 +139,7 @@
             <div class="col-md-6 col-sm-6">
               <div class="row">
                 <div class="col-md-7">
-                  <img src="img/training.jpg" style="max-width: 100%; border: 1px solid white;"> </div>
+                  <img src="img/training.jpg" style="max-width: 100%; border: 1px solid white;" alt="Trening"> </div>
                 <div class="col-md-5">
                   <a href="../community/">
                     <h5 style="display: inline-block; color: white;">Tréning</h5>
@@ -153,7 +154,7 @@
             <div class="col-md-6 col-sm-6" style="padding-top: 22px;">
               <div class="row">
                 <div class="col-md-7">
-                  <img src="img/exercises.jpg" style="max-width: 100%; border: 1px solid white;"> </div>
+                  <img src="img/exercises.jpg" style="max-width: 100%; border: 1px solid white;" alt="Cviky"> </div>
                 <div class="col-md-5">
                   <a href="../community/">
                     <h5 style="display: inline-block; color: white;">Cviky</h5>
@@ -168,7 +169,7 @@
             <div class="col-md-6 col-sm-6" style="padding-top: 22px;">
               <div class="row">
                 <div class="col-md-7">
-                  <img src="img/supplements.jpg" style="max-width: 100%; border: 1px solid white;"> </div>
+                  <img src="img/supplements.jpg" style="max-width: 100%; border: 1px solid white;" alt="Sypačky"> </div>
                 <div class="col-md-5">
                   <a href="../community/">
                     <h5 style="display: inline-block; color: white;">Sypačky</h5>
@@ -183,7 +184,7 @@
             <div class="col-md-6 col-sm-6" style="padding-top: 22px;">
               <div class="row">
                 <div class="col-md-7">
-                  <img src="img/losing.jpg" style="max-width: 100%; border: 1px solid white;"> </div>
+                  <img src="img/losing.jpg" style="max-width: 100%; border: 1px solid white;" alt="Chudnutie"> </div>
                 <div class="col-md-5">
                   <a href="../community/">
                     <h5 style="display: inline-block; color: white;">Chudnutie</h5>
@@ -201,7 +202,7 @@
           <h2 class="my-3" style="padding-bottom: 12px; border-bottom: 1px solid white; margin-top: 0!important;"><i class="fa fa-users"></i> Práve online</h2>
           <div class="row">
             <div class="col-md-5">
-              <img src="img/man.png" style="width: 100%; "> </div>
+              <img src="img/man.png" style="width: 100%; " alt="Profilova fotka uzivatela 1"> </div>
             <div class="col-md-7">
               <a href="../community/">
                 <h4 style="color: white;">Jožo</h4>
@@ -210,7 +211,7 @@
           </div>
           <div class="row" style="padding-top: 12px;">
             <div class="col-md-5">
-              <img src="img/man2.png" style="width: 100%; "> </div>
+              <img src="img/man2.png" style="width: 100%; " alt="Profilova fotka uzivatela 1"> </div>
             <div class="col-md-7">
               <a href="../community/">
                 <h4 style="color: white;">Peter</h4>
@@ -219,7 +220,7 @@
           </div>
           <div class="row" style="padding-top: 12px;">
             <div class="col-md-5">
-              <img src="img/man3.png" style="width: 100%;"> </div>
+              <img src="img/man3.png" style="width: 100%;" alt="Profilova fotka uzivatela 1"> </div>
             <div class="col-md-7">
               <a href="../community/">
                 <h4 style="color: white;">Adrián</h4>
@@ -251,7 +252,7 @@
             <br>Ilkovičova 200, 754 01 Bratislava 4</p>
         </div>
         <div class="col-md-4 my-3">
-          <img class="d-block img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;markers=New+York+City&amp;center=New+York+City&amp;zoom=17&amp;size=640x400&amp;sensor=false"> </div>
+          <img class="d-block img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;markers=New+York+City&amp;center=New+York+City&amp;zoom=17&amp;size=640x400&amp;sensor=false" alt="mapa"> </div>
         <div class="col-md-4  text-center align-self-center">
           <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-fw fa-facebook fa-3x text-white mx-3"></i></a>
           <a href="https://twitter.com/" target="_blank"><i class="fa fa-fw fa-twitter fa-3x text-white mx-3"></i></a>
